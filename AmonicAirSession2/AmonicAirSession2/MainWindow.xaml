@@ -1,0 +1,32 @@
+﻿<Window x:Class="AmonicAirSession2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AmonicAirSession2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <DataGrid Margin="10,0,10,60" VerticalAlignment="Bottom" Height="230" x:Name="MainGrid"/>
+        <GroupBox Header="Filter by" HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" BorderThickness="2">
+            <Grid>
+                <ComboBox HorizontalAlignment="Left" Margin="94,10,0,0" VerticalAlignment="Top" Width="120"/>
+                <DatePicker HorizontalAlignment="Left" Margin="94,45,0,0" VerticalAlignment="Top" Width="120"/>
+                <ComboBox HorizontalAlignment="Left" Margin="329,10,0,0" VerticalAlignment="Top" Width="120"/>
+                <TextBox HorizontalAlignment="Left" Margin="368,49,0,0" VerticalAlignment="Top" Width="81"/>
+                <ComboBox HorizontalAlignment="Left" Margin="569,10,0,0" VerticalAlignment="Top" Width="120"/>
+                <Button HorizontalAlignment="Left" Margin="569,45,0,0" VerticalAlignment="Top" Width="120" Height="20" Content="Apply"/>
+                <TextBlock HorizontalAlignment="Left" Margin="62,16,0,0" TextWrapping="Wrap" Text="From" VerticalAlignment="Top"/>
+                <TextBlock HorizontalAlignment="Left" Margin="289,16,0,0" TextWrapping="Wrap" Text="To" VerticalAlignment="Top"/>
+                <TextBlock HorizontalAlignment="Left" Margin="289,51,0,0" TextWrapping="Wrap" Text="Flight numder" VerticalAlignment="Top"/>
+                <TextBlock HorizontalAlignment="Left" Margin="35,49,0,0" TextWrapping="Wrap" Text="OutBound" VerticalAlignment="Top"/>
+                <TextBlock HorizontalAlignment="Left" Margin="526,16,0,0" TextWrapping="Wrap" Text="Sort by" VerticalAlignment="Top"/>
+
+            </Grid>
+        </GroupBox>
+        <Button Content="Cancel Flight" HorizontalAlignment="Left" Margin="10,380,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Edit Flight" HorizontalAlignment="Left" Margin="105,380,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Import changes" Margin="695,380,10,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
